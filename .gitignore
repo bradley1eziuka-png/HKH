@@ -1,0 +1,38 @@
+# Dev tooling
+node_modules/
+
+# QA / research artifacts
+temporary screenshots/
+Screenshot *.png
+.png
+
+# Reference skill repos used to build this site (not part of the site itself)
+Agent-Skills-for-Context-Engineering-main/
+impeccable-main/
+taste-skill-main/
+marketingskills-main/
+
+# Raw / unprocessed asset dumps, superseded by the curated images/ folder
+Work Photos/
+Services/
+Brand Assets/
+Photos/Screenshot*
+Photos/sites.leadconnectorhq.com_preview_EwWaLQf1KBWIOqm5bSFs.png
+Photos/sites.leadconnectorhq.com_preview_JXOsIR9Fp6Cc7vJu7IUg.png
+Photos/sites.leadconnectorhq.com_preview_OCsMACWgv2lRKGuSkmih.png
+Photos/sites.leadconnectorhq.com_preview_mRSCd7VNXqqsw19hYavw.png
+Photos/sites.leadconnectorhq.com_preview_uVsd5eX4OZymGq4kItTh.png
+
+# Raw originals already copied into images/ with descriptive names
+Useuse.png
+Usethis.png
+now.png
+Serviceshero.png
+
+# Editor / OS
+.DS_Store
+**/.DS_Store
+
+# Local Claude Code project instructions (not part of the deployed site)
+claude.md
+CLAUDE.md

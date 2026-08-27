@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | HKH Custom Coatings</title>
+<meta name="description" content="Epoxy floor coatings, interior &amp; exterior painting, power washing, drywall repair, and wood staining. Serving Rochester, MI and Oakland County.">
+<link rel="icon" href="Photos/HKHlogo.png" type="image/jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          maroon: '#6E0D00',
+          maroondark: '#4E0900',
+          ink: '#141416',
+          body: '#5B5F73',
+          navydeep: '#0A0A0A',
+          navybanner: '#0D4E7C',
+          line: '#E6E6EC',
+        },
+        fontFamily: {
+          heading: ['var(--font-heading)'],
+          body: ['var(--font-body)'],
+          hero: ['var(--font-hero)'],
+        },
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --font-hero: 'Lora', serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); font-size: 18px; color: #141416; }
+  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); }
+  .hero-bg { background: linear-gradient(180deg, rgba(6,6,6,.62) 0%, rgba(6,6,6,.8) 100%), url('images/hero-services.png') center/cover no-repeat; }
+  .scroll-mt { scroll-margin-top: 8rem; }
+</style>
+</head>
+<body class="bg-white">
+
+<!-- ============ TOP INFO BAR ============ -->
+<div class="bg-white border-b border-line">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5">
+    <a href="index.html" class="shrink-0">
+      <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-16 w-auto">
+    </a>
+    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+      <div class="flex items-center gap-3">
+        <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10v9a1 1 0 0 0 1 1H10v-5.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20h3.5a1 1 0 0 0 1-1v-9"/></svg>
+        <div class="text-left">
+          <p class="font-semibold text-ink leading-tight">Address</p>
+          <p class="text-sm text-body leading-snug">2960 Eastern Ave, Rochester Hills, MI 48307</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6"/></svg>
+        <div class="text-left">
+          <p class="font-semibold text-ink leading-tight">Email</p>
+          <p class="text-sm text-body leading-snug">hkhcoatings@gmail.com</p>
+        </div>
+      </div>
+      <a href="tel:+12484085252" class="flex items-center gap-3 group">
+        <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5c0 8.284 6.716 15 15 15h.5a1.5 1.5 0 0 0 1.5-1.5v-2.1a1 1 0 0 0-.76-.97l-3.2-.8a1 1 0 0 0-1.02.32l-1 1.2a12.2 12.2 0 0 1-5.67-5.67l1.2-1a1 1 0 0 0 .32-1.02l-.8-3.2A1 1 0 0 0 8.6 4H5.5A1.5 1.5 0 0 0 4 5.5Z"/></svg>
+        <div class="text-left">
+          <p class="font-semibold text-ink leading-tight">Call or Text</p>
+          <p class="text-sm font-bold text-maroon leading-snug group-hover:underline">(248) 408-5252</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="bg-navydeep sticky top-0 z-50">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <nav class="hidden lg:flex items-center gap-9 py-6 font-body text-sm tracked text-white">
+      <a href="index.html" class="nav-link hover:text-maroon transition-colors">HOME</a>
+      <a href="about.html" class="nav-link hover:text-maroon transition-colors">ABOUT US</a>
+      <a href="services.html" class="nav-link text-maroon">SERVICES</a>
+      <a href="projects.html" class="nav-link hover:text-maroon transition-colors">PROJECTS</a>
+      <a href="contact.html" class="nav-link hover:text-maroon transition-colors">CONTACT US</a>
+    </nav>
+    <a href="tel:+12484085252" class="lg:hidden flex items-center justify-center w-11 h-11 bg-maroon text-white shrink-0" aria-label="Call (248) 408-5252">
+      <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5c0 8.284 6.716 15 15 15h.5a1.5 1.5 0 0 0 1.5-1.5v-2.1a1 1 0 0 0-.76-.97l-3.2-.8a1 1 0 0 0-1.02.32l-1 1.2a12.2 12.2 0 0 1-5.67-5.67l1.2-1a1 1 0 0 0 .32-1.02l-.8-3.2A1 1 0 0 0 8.6 4H5.5A1.5 1.5 0 0 0 4 5.5Z"/></svg>
+    </a>
+    <button id="menuBtn" class="lg:hidden py-5 pl-3 text-white" aria-label="Open menu" aria-expanded="false">
+      <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <div class="hidden lg:flex items-center gap-3">
+      <a href="tel:+12484085252" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-7 py-6 transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5c0 8.284 6.716 15 15 15h.5a1.5 1.5 0 0 0 1.5-1.5v-2.1a1 1 0 0 0-.76-.97l-3.2-.8a1 1 0 0 0-1.02.32l-1 1.2a12.2 12.2 0 0 1-5.67-5.67l1.2-1a1 1 0 0 0 .32-1.02l-.8-3.2A1 1 0 0 0 8.6 4H5.5A1.5 1.5 0 0 0 4 5.5Z"/></svg>
+        (248) 408-5252
+      </a>
+      <a href="contact.html" class="inline-block border border-white/40 text-white font-body text-sm tracked px-7 py-6 hover:border-maroon hover:text-maroon transition-colors">FREE ESTIMATE</a>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden bg-navydeep border-t border-white/10">
+    <nav class="flex flex-col font-body text-sm tracked text-white px-6 py-4 gap-1">
+      <a href="index.html" class="py-3">HOME</a>
+      <a href="about.html" class="py-3">ABOUT US</a>
+      <a href="services.html" class="py-3 text-maroon">SERVICES</a>
+      <a href="projects.html" class="py-3">PROJECTS</a>
+      <a href="contact.html" class="py-3">CONTACT US</a>
+      <a href="tel:+12484085252" class="mt-3 inline-block text-center bg-maroon px-6 py-4">CALL (248) 408-5252</a>
+      <a href="contact.html" class="mb-3 inline-block text-center border border-white/40 px-6 py-4">FREE ESTIMATE</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero-bg">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-28 lg:py-40">
+    <div class="max-w-2xl">
+      <h1 class="font-hero font-medium text-white text-[40px] md:text-[59px] leading-[1.05]">Expert Coatings &amp; Painting Services</h1>
+      <p class="mt-6 text-lg text-white/90 leading-relaxed max-w-xl">From epoxy garage floors to full exterior repaints, HKH Custom Coatings delivers surface finishes built to last across Rochester Hills and Oakland County.</p>
+      <div class="mt-9 flex flex-wrap items-center gap-4">
+        <a href="tel:+12484085252" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-5 transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5c0 8.284 6.716 15 15 15h.5a1.5 1.5 0 0 0 1.5-1.5v-2.1a1 1 0 0 0-.76-.97l-3.2-.8a1 1 0 0 0-1.02.32l-1 1.2a12.2 12.2 0 0 1-5.67-5.67l1.2-1a1 1 0 0 0 .32-1.02l-.8-3.2A1 1 0 0 0 8.6 4H5.5A1.5 1.5 0 0 0 4 5.5Z"/></svg>
+          CALL (248) 408-5252
+        </a>
+        <a href="contact.html" class="inline-block border border-white text-white font-body text-sm tracked px-9 py-5 hover:bg-white hover:text-ink transition-colors">GET A QUOTE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES INTRO ============ -->
+<section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-20 lg:py-24 text-center">
+  <h2 class="font-heading font-semibold text-4xl md:text-5xl text-ink">Our Services</h2>
+  <p class="text-body mt-5 max-w-2xl mx-auto leading-relaxed">We focus on surface finishes that hold up to real use. Every job starts with proper prep and ends with a finish that's built to last, no shortcuts, no upsell games.</p>
+</section>
+
+<!-- ============ SERVICE BLOCKS ============ -->
+<section class="max-w-[1320px] mx-auto px-6 lg:px-10 pb-24">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <div id="exterior-painting" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/exterior-commercial-warehouse-stripe.png" alt="Commercial exterior painting project with a painted accent stripe" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Exterior Painting</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Weather-ready coatings that protect siding, trim, and doors from Michigan's seasons while boosting your home's curb appeal.</p>
+      </div>
+    </div>
+
+    <div id="interior-painting" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/interior-bedroom-painted.png" alt="Freshly painted bedroom interior by HKH Custom Coatings" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Interior Painting</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Clean lines, smooth coverage, and lasting color for every room in your home or business, with careful prep and protection for your floors and furniture.</p>
+      </div>
+    </div>
+
+    <div id="cabinet-painting" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/service-cabinet-painting.png" alt="Freshly painted white kitchen cabinets by HKH Custom Coatings" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Cabinet Painting</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Full kitchen and bath cabinet refinishing, with proper degreasing, sanding, and a sprayed or brushed finish that looks factory-smooth and holds up to daily use.</p>
+      </div>
+    </div>
+
+    <div id="staining" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/service-staining.png" alt="Hand applying wood stain to a deck board" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Staining</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Stain and seal decks, fences, and trim to bring out the natural grain and protect the wood against sun, moisture, and Michigan winters.</p>
+      </div>
+    </div>
+
+    <div id="caulking" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/service-caulking.png" alt="Applying caulk sealant around a window frame" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Caulking</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Fresh, clean caulk lines around trim, windows, and countertops that seal out moisture and finish a paint job the right way.</p>
+      </div>
+    </div>
+
+    <div id="power-washing" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/service-power-washing.png" alt="Power washing a commercial sidewalk and storefront" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Power Washing</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Soft and pressure washing to strip grime, mildew, and old coatings before every paint or epoxy job, so the new finish actually bonds and lasts.</p>
+      </div>
+    </div>
+
+    <div id="drywall-repair" class="scroll-mt border border-line overflow-hidden">
+      <div class="w-full aspect-[3/2] bg-line flex items-center justify-center">
+        <span class="font-heading text-body/60 text-lg">Drywall Repair</span>
+      </div>
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Drywall Repair</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Patch, sand, and prep work that leaves walls and ceilings smooth and ready for a flawless paint finish, no visible seams.</p>
+      </div>
+    </div>
+
+    <div id="epoxy-floors" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/epoxy-garage-floor-tan-speckle.png" alt="Tan speckle flake epoxy garage floor coating by HKH Custom Coatings" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Epoxy Floors</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Seamless, durable epoxy systems for garages, basements, and commercial floors. Built to resist stains, hot tires, and heavy foot traffic without cracking or peeling.</p>
+      </div>
+    </div>
+
+    <div id="concrete-grinding" class="scroll-mt border border-line overflow-hidden">
+      <img src="images/service-concrete-grinding.png" alt="Concrete grinding surface prep for an epoxy floor coating" class="w-full aspect-[3/2] object-cover">
+      <div class="p-6">
+        <h3 class="font-heading font-semibold text-xl text-ink">Concrete Grinding</h3>
+        <p class="text-body mt-2 text-sm leading-relaxed">Mechanical surface prep that opens the pores of the concrete so epoxy and coatings bond properly and last.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="bg-navybanner">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-14 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <svg class="w-12 h-12 text-white shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="7.5" r="3"/><path stroke-linecap="round" d="M5 20c0-3 3-5.5 7-5.5s7 2.5 7 5.5"/><circle cx="4.5" cy="10" r="2"/><path stroke-linecap="round" d="M1.5 18c0-2 1.5-3.7 3.5-4"/><circle cx="19.5" cy="10" r="2"/><path stroke-linecap="round" d="M22.5 18c0-2-1.5-3.7-3.5-4"/></svg>
+      <p class="text-white text-lg leading-snug">Our team is here to answer your questions and help you get started on turning your vision into reality.</p>
+    </div>
+    <a href="contact.html" class="shrink-0 bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-5 transition-colors">CONTACT US NOW</a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-24 lg:py-28 text-center">
+  <h2 class="font-heading font-bold text-4xl md:text-5xl text-ink">Testimonials</h2>
+  <p class="text-body mt-3">Read what our satisfied clients have to say</p>
+  <div class="grid md:grid-cols-3 gap-6 mt-16 text-left">
+    <div class="border border-line p-8 flex flex-col justify-between">
+      <div>
+      <div class="flex gap-0.5 text-maroon mb-4">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </div>
+      <p class="text-body leading-relaxed">"Hired HKH Custom Coatings to paint a bedroom, living room, and hallway. Everything was painted to perfection! Could not be happier with the work, and even a great clean up."</p>
+      </div>
+      <div class="flex items-center gap-3 mt-6">
+        <div class="w-11 h-11 rounded-full bg-maroon text-white font-body font-bold text-sm flex items-center justify-center shrink-0">EL</div>
+        <div><p class="font-bold text-ink text-sm">Elizabeth LePage</p><p class="text-body text-sm">Google Review</p></div>
+      </div>
+    </div>
+    <div class="border border-line p-8 flex flex-col justify-between">
+      <div>
+      <div class="flex gap-0.5 text-maroon mb-4">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </div>
+      <p class="text-body leading-relaxed">"Hunter was excellent! Showed up when he said he would and knocked the job out quickly. Floor turned out amazing as well!"</p>
+      </div>
+      <div class="flex items-center gap-3 mt-6">
+        <div class="w-11 h-11 rounded-full bg-maroon text-white font-body font-bold text-sm flex items-center justify-center shrink-0">TU</div>
+        <div><p class="font-bold text-ink text-sm">Tyler Utter</p><p class="text-body text-sm">Google Review</p></div>
+      </div>
+    </div>
+    <div class="border border-line p-8 flex flex-col justify-between">
+      <div>
+      <div class="flex gap-0.5 text-maroon mb-4">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </div>
+      <p class="text-body leading-relaxed">"I recently had HKH Custom Coatings install an epoxy floor in my garage, and I couldn't be happier with the results. From start to finish, the team was professional, knowledgeable, and easy to work with."</p>
+      </div>
+      <div class="flex items-center gap-3 mt-6">
+        <div class="w-11 h-11 rounded-full bg-maroon text-white font-body font-bold text-sm flex items-center justify-center shrink-0">KS</div>
+        <div><p class="font-bold text-ink text-sm">Kortne Stolicker</p><p class="text-body text-sm">Google Review</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navydeep">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div>
+      <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-20 w-auto">
+      <p class="text-white/60 mt-6 leading-relaxed text-sm">We turn worn, damaged floors into durable, seamless finishes built to last, with honest pricing and clear communication from quote to completion.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-body font-bold text-lg">Menu</h4>
+      <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
+        <a href="index.html" class="hover:text-maroon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-maroon transition-colors">About Us</a>
+        <a href="services.html" class="hover:text-maroon transition-colors">Services</a>
+        <a href="projects.html" class="hover:text-maroon transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-maroon transition-colors">Contact Us</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="text-white font-body font-bold text-lg">Links</h4>
+      <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
+        <a href="terms.html" class="hover:text-maroon transition-colors">Terms of Use</a>
+        <a href="privacy.html" class="hover:text-maroon transition-colors">Privacy Policy</a>
+        <a href="cookies.html" class="hover:text-maroon transition-colors">Cookie Policy</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="text-white font-body font-bold text-lg">Address</h4>
+      <p class="text-white/70 mt-5 text-sm leading-relaxed">2960 Eastern Ave, Rochester Hills, MI 48307</p>
+      <a href="tel:+12484085252" class="block text-white font-bold mt-4 text-sm hover:text-maroon transition-colors">(248) 408-5252</a>
+      <p class="text-white/70 mt-2 text-sm">hkhcoatings@gmail.com</p>
+      <p class="text-white/50 mt-4 text-sm">Mon - Sat: 8:00 AM - 7:00 PM</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="text-center text-white/50 text-sm py-6">© 2026 HKH Custom Coatings LLC. Rochester, MI. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+    mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+</script>
+</body>
+</html>
