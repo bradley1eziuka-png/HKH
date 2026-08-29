@@ -40,7 +40,7 @@
   }
   html { scroll-behavior: smooth; }
   body { font-family: var(--font-body); font-size: 18px; color: #141416; }
-  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); }
+  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); } .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; } .no-scrollbar::-webkit-scrollbar { display: none; }
   input, select, textarea { outline: none; }
   input:focus, select:focus, textarea:focus { border-color: #6E0D00; }
   details > summary { list-style: none; cursor: pointer; }
@@ -52,11 +52,11 @@
 
 <!-- ============ TOP INFO BAR ============ -->
 <div class="bg-white border-b border-line">
-  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
     <a href="index.html" class="shrink-0">
       <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-16 w-auto">
     </a>
-    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+    <div class="flex flex-wrap items-center justify-start md:justify-center gap-x-10 gap-y-4">
       <div class="flex items-center gap-3">
         <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10v9a1 1 0 0 0 1 1H10v-5.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20h3.5a1 1 0 0 0 1-1v-9"/></svg>
         <div class="text-left">
@@ -198,29 +198,30 @@
 <section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-24 lg:py-28 text-center">
   <p class="font-body text-maroon text-sm tracked">Our Process</p>
   <h2 class="font-heading font-normal text-4xl md:text-5xl text-ink mt-3">Why Choose Us</h2>
-  <div class="grid md:grid-cols-2 gap-6 mt-16 text-left">
-    <div class="border border-line p-9 flex gap-6">
+  <div data-carousel>
+    <div data-track class="flex gap-6 mt-16 text-left overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth md:grid md:grid-cols-2 md:overflow-visible">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">1</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Reliable &amp; Timely</h3>
         <p class="text-body mt-2 leading-relaxed">We show up when we say we will and treat every job, big or small, with the same level of care and attention.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">2</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Custom-Matched Solutions</h3>
         <p class="text-body mt-2 leading-relaxed">Every space is different. We assess your floor and recommend the coating system that actually fits its use, not a one-size-fits-all package.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">3</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Licensed &amp; Insured</h3>
         <p class="text-body mt-2 leading-relaxed">Fully licensed and insured (License #PGR973246071) for complete peace of mind.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">4</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Transparent Pricing</h3>
@@ -228,6 +229,16 @@
       </div>
     </div>
   </div>
+</div>
+    <div class="flex items-center justify-center gap-4 mt-6 md:hidden">
+      <button data-prev aria-label="Previous" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div data-dots class="flex items-center gap-2"></div>
+      <button data-next aria-label="Next" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
 </section>
 
 <!-- ============ SERVICE AREAS ============ -->
@@ -241,54 +252,54 @@
       referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps?q=Rochester+Hills,+MI&output=embed">
     </iframe>
-    <div class="grid sm:grid-cols-2 gap-4">
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Rochester Hills, MI</span>
+    <div class="grid grid-cols-2 gap-2 sm:gap-4">
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Rochester Hills, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Shelby Township, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Shelby Township, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Sterling Heights, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Sterling Heights, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Troy, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Troy, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Clarkston, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Clarkston, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Waterford, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Waterford, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">West Bloomfield, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">West Bloomfield, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Commerce Township, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Commerce Township, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">White Lake, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">White Lake, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Washington Township, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Washington Township, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Utica, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Utica, MI</span>
       </div>
-      <div class="border border-line px-6 py-4 flex items-center gap-3">
-        <svg class="w-5 h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-        <span class="text-ink">Detroit, MI</span>
+      <div class="border border-line px-2.5 py-3 sm:px-6 sm:py-4 flex items-center gap-2 sm:gap-3">
+        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span class="text-ink text-xs sm:text-base">Detroit, MI</span>
       </div>
     </div>
   </div>
@@ -377,6 +388,68 @@
     mobileMenu.classList.toggle('hidden');
     menuBtn.setAttribute('aria-expanded', String(!isOpen));
   });
+
+  function initCarousel(root) {
+    const track = root.querySelector('[data-track]');
+    const slides = Array.from(track.querySelectorAll(':scope > [data-slide]'));
+    const prevBtn = root.querySelector('[data-prev]');
+    const nextBtn = root.querySelector('[data-next]');
+    const dotsWrap = root.querySelector('[data-dots]');
+    let index = 0;
+    let timer = null;
+    const isMobile = () => window.innerWidth < 768;
+
+    function renderDots() {
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.className = 'w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.addEventListener('click', () => { goTo(i); resetTimer(); });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      if (!isMobile()) return;
+      const target = slides[index].getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+      track.scrollTo({ left: target, behavior: 'smooth' });
+      renderDots();
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+    let scrollTimeout;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (!isMobile()) return;
+        let closest = 0, closestDist = Infinity;
+        slides.forEach((s, i) => {
+          const d = Math.abs(s.getBoundingClientRect().left - track.getBoundingClientRect().left);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        index = closest;
+        renderDots();
+      }, 100);
+    }, { passive: true });
+
+    function startTimer() {
+      timer = setInterval(() => { if (isMobile()) next(); }, 2500);
+    }
+    function resetTimer() { clearInterval(timer); startTimer(); }
+
+    renderDots();
+    startTimer();
+  }
+
+  document.querySelectorAll('[data-carousel]').forEach(initCarousel);
 
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', (e) => {

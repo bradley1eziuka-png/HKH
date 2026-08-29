@@ -40,18 +40,18 @@
   }
   html { scroll-behavior: smooth; }
   body { font-family: var(--font-body); font-size: 18px; color: #141416; }
-  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); }
+  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); } .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; } .no-scrollbar::-webkit-scrollbar { display: none; }
 </style>
 </head>
 <body class="bg-white">
 
 <!-- ============ TOP INFO BAR ============ -->
 <div class="bg-white border-b border-line">
-  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
     <a href="index.html" class="shrink-0">
       <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-16 w-auto">
     </a>
-    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+    <div class="flex flex-wrap items-center justify-start md:justify-center gap-x-10 gap-y-4">
       <div class="flex items-center gap-3">
         <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10v9a1 1 0 0 0 1 1H10v-5.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20h3.5a1 1 0 0 0 1-1v-9"/></svg>
         <div class="text-left">
@@ -143,8 +143,9 @@
 <section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-24 lg:py-28 text-center">
   <h2 class="font-heading font-bold text-4xl md:text-5xl text-ink">Testimonials</h2>
   <p class="text-body mt-3">Read what our satisfied clients have to say</p>
-  <div class="grid md:grid-cols-3 gap-6 mt-16 text-left">
-    <div class="border border-line p-8 flex flex-col justify-between">
+  <div data-carousel>
+    <div data-track class="flex gap-6 mt-16 text-left overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth md:grid md:grid-cols-3 md:overflow-visible">
+    <div data-slide class="border border-line p-8 flex flex-col justify-between basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div>
       <div class="flex gap-0.5 text-maroon mb-4">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
@@ -160,7 +161,7 @@
         <div><p class="font-bold text-ink text-sm">Anthony Nicaj</p><p class="text-body text-sm">Google Review</p></div>
       </div>
     </div>
-    <div class="border border-line p-8 flex flex-col justify-between">
+    <div data-slide class="border border-line p-8 flex flex-col justify-between basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div>
       <div class="flex gap-0.5 text-maroon mb-4">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
@@ -176,7 +177,7 @@
         <div><p class="font-bold text-ink text-sm">Adrienne</p><p class="text-body text-sm">Google Review</p></div>
       </div>
     </div>
-    <div class="border border-line p-8 flex flex-col justify-between">
+    <div data-slide class="border border-line p-8 flex flex-col justify-between basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div>
       <div class="flex gap-0.5 text-maroon mb-4">
         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
@@ -193,6 +194,16 @@
       </div>
     </div>
   </div>
+    <div class="flex items-center justify-center gap-4 mt-6 md:hidden">
+      <button data-prev aria-label="Previous testimonial" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div data-dots class="flex items-center gap-2"></div>
+      <button data-next aria-label="Next testimonial" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
 </section>
 
 
@@ -200,28 +211,39 @@
 <section class="max-w-[1320px] mx-auto px-6 lg:px-10 pb-24 lg:pb-32 text-center">
   <p class="font-body text-maroon text-sm tracked">Our Process</p>
   <h2 class="font-heading font-semibold text-4xl md:text-5xl text-ink mt-3">How It Works</h2>
-  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-16 text-left sm:text-center">
-    <div class="flex flex-col items-center">
+  <div data-carousel>
+    <div data-track class="flex gap-12 mt-16 text-left sm:text-center overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth md:grid md:grid-cols-4 md:overflow-visible">
+    <div data-slide class="flex flex-col items-center basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-16 h-16 rounded-full bg-maroon text-white font-heading font-bold text-2xl flex items-center justify-center">1</div>
       <h3 class="font-heading font-semibold text-lg text-ink mt-6">Free Quote Request</h3>
       <p class="text-body mt-3 leading-relaxed">Submit your project details online and we'll follow up fast.</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div data-slide class="flex flex-col items-center basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-16 h-16 rounded-full bg-maroon text-white font-heading font-bold text-2xl flex items-center justify-center">2</div>
       <h3 class="font-heading font-semibold text-lg text-ink mt-6">On-Site Estimate</h3>
       <p class="text-body mt-3 leading-relaxed">We walk the space, assess the surface, and give you a clear, honest price.</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div data-slide class="flex flex-col items-center basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-16 h-16 rounded-full bg-maroon text-white font-heading font-bold text-2xl flex items-center justify-center">3</div>
       <h3 class="font-heading font-semibold text-lg text-ink mt-6">Surface Prep &amp; Coating</h3>
       <p class="text-body mt-3 leading-relaxed">Once approved, we prep the floor properly and apply your custom coating system.</p>
     </div>
-    <div class="flex flex-col items-center">
+    <div data-slide class="flex flex-col items-center basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-16 h-16 rounded-full bg-maroon text-white font-heading font-bold text-2xl flex items-center justify-center">4</div>
       <h3 class="font-heading font-semibold text-lg text-ink mt-6">Final Walkthrough</h3>
       <p class="text-body mt-3 leading-relaxed">We inspect the finished floor with you and make sure it meets spec before we call it done.</p>
     </div>
   </div>
+  </div>
+    <div class="flex items-center justify-center gap-4 mt-6 md:hidden">
+      <button data-prev aria-label="Previous" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div data-dots class="flex items-center gap-2"></div>
+      <button data-next aria-label="Next" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
   <a href="contact.html" class="mt-16 inline-block bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-5 transition-colors">REQUEST A FREE ESTIMATE</a>
 </section>
 
@@ -271,6 +293,68 @@
     mobileMenu.classList.toggle('hidden');
     menuBtn.setAttribute('aria-expanded', String(!isOpen));
   });
+
+  function initCarousel(root) {
+    const track = root.querySelector('[data-track]');
+    const slides = Array.from(track.querySelectorAll(':scope > [data-slide]'));
+    const prevBtn = root.querySelector('[data-prev]');
+    const nextBtn = root.querySelector('[data-next]');
+    const dotsWrap = root.querySelector('[data-dots]');
+    let index = 0;
+    let timer = null;
+    const isMobile = () => window.innerWidth < 768;
+
+    function renderDots() {
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.className = 'w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.addEventListener('click', () => { goTo(i); resetTimer(); });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      if (!isMobile()) return;
+      const target = slides[index].getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+      track.scrollTo({ left: target, behavior: 'smooth' });
+      renderDots();
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+    let scrollTimeout;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (!isMobile()) return;
+        let closest = 0, closestDist = Infinity;
+        slides.forEach((s, i) => {
+          const d = Math.abs(s.getBoundingClientRect().left - track.getBoundingClientRect().left);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        index = closest;
+        renderDots();
+      }, 100);
+    }, { passive: true });
+
+    function startTimer() {
+      timer = setInterval(() => { if (isMobile()) next(); }, 2500);
+    }
+    function resetTimer() { clearInterval(timer); startTimer(); }
+
+    renderDots();
+    startTimer();
+  }
+
+  document.querySelectorAll('[data-carousel]').forEach(initCarousel);
 </script>
 </body>
 </html>

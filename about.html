@@ -40,7 +40,7 @@
   }
   html { scroll-behavior: smooth; }
   body { font-family: var(--font-body); font-size: 18px; color: #141416; }
-  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); }
+  .tracked { letter-spacing: .09em; } .nav-link { position: relative; } .nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 1.5px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s ease; } .nav-link:hover::after { transform: scaleX(1); } .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; } .no-scrollbar::-webkit-scrollbar { display: none; }
   .hero-bg { background: linear-gradient(180deg, rgba(6,6,6,.62) 0%, rgba(6,6,6,.8) 100%), url('images/hero-about.png') center/cover no-repeat; }
   .dark-photo { background: linear-gradient(180deg, rgba(6,10,16,.88) 0%, rgba(6,10,16,.93) 100%), url('https://placehold.co/1920x1080/1a2330/1a2330') center/cover no-repeat; }
   .cta-photo { background: linear-gradient(90deg, rgba(255,255,255,.94) 0%, rgba(255,255,255,.78) 55%, rgba(255,255,255,.4) 100%), url('https://placehold.co/1920x900/9aa0aa/9aa0aa') center/cover no-repeat; }
@@ -50,11 +50,11 @@
 
 <!-- ============ TOP INFO BAR ============ -->
 <div class="bg-white border-b border-line">
-  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-5">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
     <a href="index.html" class="shrink-0">
       <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-16 w-auto">
     </a>
-    <div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+    <div class="flex flex-wrap items-center justify-start md:justify-center gap-x-10 gap-y-4">
       <div class="flex items-center gap-3">
         <svg class="w-6 h-6 text-maroon shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10v9a1 1 0 0 0 1 1H10v-5.5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1V20h3.5a1 1 0 0 0 1-1v-9"/></svg>
         <div class="text-left">
@@ -142,10 +142,10 @@
       <p class="mt-7 text-body leading-relaxed">Built on hands-on experience and a hard-earned reputation for reliable work, fair pricing, and strong client relationships. Whether it's a single garage floor or a large commercial job, Hunter and the team are dedicated to delivering results that exceed expectations.</p>
       <a href="services.html" class="mt-8 inline-block bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-5 transition-colors">VIEW SERVICES</a>
     </div>
-    <div class="grid grid-cols-2 gap-4">
-      <img src="images/epoxy-garage-floor-blue-2.png" alt="Blue flake epoxy garage floor coating by HKH Custom Coatings" class="w-full h-full object-cover col-span-1 row-span-2 mt-10">
-      <img src="images/interior-commercial-red-wall.png" alt="Commercial interior painting project with red accent wall" class="w-full h-full object-cover">
-      <img src="images/exterior-commercial-warehouse-stripe.png" alt="Commercial exterior painting project with a painted accent stripe" class="w-full h-full object-cover">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+      <img src="images/epoxy-garage-floor-blue-2.png" alt="Blue flake epoxy garage floor coating by HKH Custom Coatings" class="w-full aspect-[4/3] lg:h-full lg:aspect-auto object-cover lg:col-span-1 lg:row-span-2 lg:mt-10">
+      <img src="images/interior-commercial-red-wall.png" alt="Commercial interior painting project with red accent wall" class="w-full aspect-[4/3] lg:h-full lg:aspect-auto object-cover">
+      <img src="images/exterior-commercial-warehouse-stripe.png" alt="Commercial exterior painting project with a painted accent stripe" class="w-full aspect-[4/3] lg:h-full lg:aspect-auto object-cover">
     </div>
   </div>
 </section>
@@ -165,29 +165,30 @@
 <section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-24 lg:py-28 text-center">
   <p class="font-body text-maroon text-sm tracked">Our Process</p>
   <h2 class="font-heading font-normal text-4xl md:text-5xl text-ink mt-3">Why Choose Us</h2>
-  <div class="grid md:grid-cols-2 gap-6 mt-16 text-left">
-    <div class="border border-line p-9 flex gap-6">
+  <div data-carousel>
+    <div data-track class="flex gap-6 mt-16 text-left overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth md:grid md:grid-cols-2 md:overflow-visible">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">1</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Reliable &amp; Timely</h3>
         <p class="text-body mt-2 leading-relaxed">We show up when we say we will and treat every job, big or small, with the same level of care and attention.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">2</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Custom-Matched Solutions</h3>
         <p class="text-body mt-2 leading-relaxed">Every space is different. We assess your floor and recommend the coating system that actually fits its use, not a one-size-fits-all package.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">3</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Licensed &amp; Insured</h3>
         <p class="text-body mt-2 leading-relaxed">Fully licensed and insured (License #PGR973246071) for complete peace of mind.</p>
       </div>
     </div>
-    <div class="border border-line p-9 flex gap-6">
+    <div data-slide class="border border-line p-9 flex gap-6 basis-full shrink-0 min-w-0 snap-center md:min-w-0 md:shrink">
       <div class="w-14 h-14 rounded-full bg-maroon text-white font-body font-bold text-xl flex items-center justify-center shrink-0">4</div>
       <div>
         <h3 class="font-body font-bold text-lg text-ink">Transparent Pricing</h3>
@@ -195,6 +196,16 @@
       </div>
     </div>
   </div>
+</div>
+    <div class="flex items-center justify-center gap-4 mt-6 md:hidden">
+      <button data-prev aria-label="Previous" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div data-dots class="flex items-center gap-2"></div>
+      <button data-next aria-label="Next" class="w-10 h-10 flex items-center justify-center border border-line text-ink hover:border-maroon hover:text-maroon transition-colors shrink-0">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
 </section>
 
 <!-- ============ WARRANTY ============ -->
@@ -232,16 +243,16 @@
         <p class="text-white/70 mt-4 leading-relaxed max-w-sm">We focus on surface finishes that hold up to real use, done right the first time.</p>
         <a href="services.html" class="mt-8 inline-block bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-5 transition-colors">DISCOVER MORE</a>
       </div>
-      <div class="grid sm:grid-cols-2 gap-5">
-        <a href="services.html#exterior-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Exterior Painting</a>
-        <a href="services.html#interior-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Interior Painting</a>
-        <a href="services.html#cabinet-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Cabinet Painting</a>
-        <a href="services.html#staining" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Staining</a>
-        <a href="services.html#caulking" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Caulking</a>
-        <a href="services.html#power-washing" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Power Washing</a>
-        <a href="services.html#drywall-repair" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Drywall Repair</a>
-        <a href="services.html#epoxy-floors" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Epoxy Floors</a>
-        <a href="services.html#concrete-grinding" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-7 py-6 text-white font-medium">Concrete Grinding</a>
+      <div class="grid grid-cols-2 gap-2 sm:gap-5">
+        <a href="services.html#exterior-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Exterior Painting</a>
+        <a href="services.html#interior-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Interior Painting</a>
+        <a href="services.html#cabinet-painting" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Cabinet Painting</a>
+        <a href="services.html#staining" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Staining</a>
+        <a href="services.html#caulking" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Caulking</a>
+        <a href="services.html#power-washing" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Power Washing</a>
+        <a href="services.html#drywall-repair" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Drywall Repair</a>
+        <a href="services.html#epoxy-floors" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Epoxy Floors</a>
+        <a href="services.html#concrete-grinding" class="border border-white/30 hover:border-maroon hover:bg-maroon/10 transition-colors px-3 py-4 sm:px-7 sm:py-6 text-white font-medium text-xs sm:text-base text-center sm:text-left">Concrete Grinding</a>
       </div>
     </div>
   </div>
@@ -327,6 +338,68 @@
     mobileMenu.classList.toggle('hidden');
     menuBtn.setAttribute('aria-expanded', String(!isOpen));
   });
+
+  function initCarousel(root) {
+    const track = root.querySelector('[data-track]');
+    const slides = Array.from(track.querySelectorAll(':scope > [data-slide]'));
+    const prevBtn = root.querySelector('[data-prev]');
+    const nextBtn = root.querySelector('[data-next]');
+    const dotsWrap = root.querySelector('[data-dots]');
+    let index = 0;
+    let timer = null;
+    const isMobile = () => window.innerWidth < 768;
+
+    function renderDots() {
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+        dot.className = 'w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.addEventListener('click', () => { goTo(i); resetTimer(); });
+        dotsWrap.appendChild(dot);
+      });
+    }
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      if (!isMobile()) return;
+      const target = slides[index].getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+      track.scrollTo({ left: target, behavior: 'smooth' });
+      renderDots();
+    }
+
+    function next() { goTo(index + 1); }
+    function prev() { goTo(index - 1); }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); resetTimer(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); resetTimer(); });
+
+    let scrollTimeout;
+    track.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(() => {
+        if (!isMobile()) return;
+        let closest = 0, closestDist = Infinity;
+        slides.forEach((s, i) => {
+          const d = Math.abs(s.getBoundingClientRect().left - track.getBoundingClientRect().left);
+          if (d < closestDist) { closestDist = d; closest = i; }
+        });
+        index = closest;
+        renderDots();
+      }, 100);
+    }, { passive: true });
+
+    function startTimer() {
+      timer = setInterval(() => { if (isMobile()) next(); }, 2500);
+    }
+    function resetTimer() { clearInterval(timer); startTimer(); }
+
+    renderDots();
+    startTimer();
+  }
+
+  document.querySelectorAll('[data-carousel]').forEach(initCarousel);
 </script>
 </body>
 </html>
