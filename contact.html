@@ -190,11 +190,6 @@
           </div>
           <button type="submit" class="w-full bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-4 transition-colors">REQUEST A FREE ESTIMATE</button>
         </div>
-        <div id="formSuccess" class="hidden text-center py-10">
-          <svg class="w-12 h-12 text-maroon mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5 2.5 2.5 5-5.5"/></svg>
-          <h3 class="font-body font-bold text-xl text-ink mt-5">Thanks, we got it!</h3>
-          <p class="text-body mt-2">We'll be in touch shortly to schedule your free estimate.</p>
-        </div>
         <p id="formError" class="hidden text-center text-sm text-maroon mt-4">Something went wrong sending your request. Please try again, or call us at <a href="tel:+12484085252" class="underline">(248) 408-5252</a>.</p>
       </form>
     </div>
@@ -487,8 +482,7 @@
         body: JSON.stringify(payload),
       });
       if (!res.ok) throw new Error('Webhook request failed with status ' + res.status);
-      document.getElementById('formFields').classList.add('hidden');
-      document.getElementById('formSuccess').classList.remove('hidden');
+      window.location.href = 'book-estimate.html';
     } catch (err) {
       formError.classList.remove('hidden');
     } finally {

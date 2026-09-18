@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/book-estimate", "destination": "/book-estimate.html" }
+  ]
+}
