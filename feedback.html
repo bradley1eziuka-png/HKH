@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leave Feedback | HKH Custom Coatings</title>
+<meta name="description" content="Tell HKH Custom Coatings how we did. Rate your experience and, if something wasn't right, let us know so we can make it right.">
+<link rel="icon" href="Photos/HKHlogo.png" type="image/jpeg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { colors: { maroon: '#6E0D00', maroondark: '#4E0900', ink: '#141416', body: '#5B5F73', navydeep: '#0A0A0A', navybanner: '#0D4E7C', line: '#E6E6EC' }, fontFamily: { heading: ['var(--font-heading)'], body: ['var(--font-body)'], hero: ['var(--font-hero)'] } } } }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style> :root { --font-hero: 'Lora', serif; --font-heading: 'Montserrat', sans-serif; --font-body: 'Poppins', sans-serif; } body { font-family: var(--font-body); font-size: 18px; color:#141416; } .tracked{letter-spacing:.09em;} .nav-link{position:relative;} .nav-link::after{content:'';position:absolute;left:0;right:0;bottom:-4px;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s ease;} .nav-link:hover::after{transform:scaleX(1);} </style>
+</head>
+<body class="bg-white">
+<div class="bg-white border-b border-line">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-5 flex items-center justify-center md:justify-start">
+    <a href="index.html"><img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-16 w-auto"></a>
+  </div>
+</div>
+<header class="bg-navydeep sticky top-0 z-50">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <nav class="hidden lg:flex items-center gap-9 py-6 font-body text-sm tracked text-white">
+      <a href="index.html" class="nav-link hover:text-maroon transition-colors">HOME</a>
+      <a href="about.html" class="nav-link hover:text-maroon transition-colors">ABOUT US</a>
+      <a href="services.html" class="nav-link hover:text-maroon transition-colors">SERVICES</a>
+      <a href="projects.html" class="nav-link hover:text-maroon transition-colors">PROJECTS</a>
+      <a href="contact.html" class="nav-link hover:text-maroon transition-colors">CONTACT US</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="tel:+12484085252" class="inline-flex items-center gap-2 bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-6 lg:px-7 py-5 lg:py-6 transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5c0 8.284 6.716 15 15 15h.5a1.5 1.5 0 0 0 1.5-1.5v-2.1a1 1 0 0 0-.76-.97l-3.2-.8a1 1 0 0 0-1.02.32l-1 1.2a12.2 12.2 0 0 1-5.67-5.67l1.2-1a1 1 0 0 0 .32-1.02l-.8-3.2A1 1 0 0 0 8.6 4H5.5A1.5 1.5 0 0 0 4 5.5Z"/></svg>
+        <span class="hidden sm:inline">(248) 408-5252</span>
+      </a>
+      <a href="contact.html" class="hidden lg:inline-block border border-white/40 text-white font-body text-sm tracked px-7 py-6 hover:border-maroon hover:text-maroon transition-colors">FREE ESTIMATE</a>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-[720px] mx-auto px-6 lg:px-10 py-20 lg:py-24">
+
+  <!-- ============ STEP 1: RATING ============ -->
+  <div id="feedbackStep1" class="text-center">
+    <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-20 w-auto mx-auto">
+    <h1 class="font-heading font-extrabold text-4xl md:text-5xl text-ink mt-8">How would you rate us?</h1>
+
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-12">
+      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="5">
+        <input type="radio" name="rating" value="5" class="sr-only">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </div>
+        <span class="font-body text-sm font-medium text-ink">5 Stars</span>
+      </label>
+      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="4">
+        <input type="radio" name="rating" value="4" class="sr-only">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </div>
+        <span class="font-body text-sm font-medium text-ink">4 Stars</span>
+      </label>
+      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="3">
+        <input type="radio" name="rating" value="3" class="sr-only">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </div>
+        <span class="font-body text-sm font-medium text-ink">3 Stars</span>
+      </label>
+      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="2">
+        <input type="radio" name="rating" value="2" class="sr-only">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </div>
+        <span class="font-body text-sm font-medium text-ink">2 Stars</span>
+      </label>
+      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="1">
+        <input type="radio" name="rating" value="1" class="sr-only">
+        <div class="flex gap-0.5">
+          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+        </div>
+        <span class="font-body text-sm font-medium text-ink">1 Star</span>
+      </label>
+    </div>
+
+    <button id="ratingNextBtn" type="button" disabled class="w-full sm:w-auto mt-12 bg-maroon hover:bg-maroondark disabled:opacity-40 disabled:cursor-not-allowed text-white font-body text-sm tracked px-12 py-4 transition-colors">NEXT</button>
+  </div>
+
+  <!-- ============ STEP 2B: NEGATIVE FEEDBACK FORM ============ -->
+  <div id="feedbackStep2b" class="hidden">
+    <p class="text-body leading-relaxed text-center max-w-lg mx-auto">Sorry to hear that you're not satisfied. Please provide us with your feedback and we'll do our best to improve.</p>
+
+    <form id="feedbackForm" class="bg-white border border-line p-8 lg:p-10 mt-10">
+      <div id="feedbackFields" class="space-y-5">
+        <div>
+          <label class="block text-sm font-semibold text-ink mb-2" for="fbName">Name <span class="text-body font-normal">(optional)</span></label>
+          <input id="fbName" name="name" type="text" class="w-full border border-line px-4 py-3 text-ink focus:border-maroon transition-colors" placeholder="Jane Smith">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-ink mb-2" for="fbEmail">Email <span class="text-body font-normal">(optional)</span></label>
+          <input id="fbEmail" name="email" type="email" class="w-full border border-line px-4 py-3 text-ink focus:border-maroon transition-colors" placeholder="jane@email.com">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-ink mb-2" for="fbMessage">Your Feedback</label>
+          <textarea id="fbMessage" name="message" rows="5" required class="w-full border border-line px-4 py-3 text-ink focus:border-maroon transition-colors" placeholder="What can we do to improve?"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-maroon hover:bg-maroondark text-white font-body text-sm tracked px-9 py-4 transition-colors">SUBMIT FEEDBACK</button>
+      </div>
+      <div id="feedbackSuccess" class="hidden text-center py-10">
+        <svg class="w-12 h-12 text-maroon mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" stroke-linejoin="round" d="m8 12.5 2.5 2.5 5-5.5"/></svg>
+        <h3 class="font-body font-bold text-xl text-ink mt-5">Thank you for letting us know.</h3>
+        <p class="text-body mt-2">Hunter personally reviews every piece of feedback and will follow up if needed.</p>
+      </div>
+      <p id="feedbackError" class="hidden text-center text-sm text-maroon mt-4">Something went wrong sending your feedback. Please try again, or call us at <a href="tel:+12484085252" class="underline">(248) 408-5252</a>.</p>
+    </form>
+  </div>
+
+</section>
+
+<footer class="bg-navydeep">
+  <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
+    <div>
+      <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-20 w-auto">
+      <p class="text-white/60 mt-6 leading-relaxed text-sm">We turn worn, damaged floors into durable, seamless finishes built to last, with honest pricing and clear communication from quote to completion.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-heading font-bold text-lg">Menu</h4>
+      <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
+        <a href="index.html" class="hover:text-maroon transition-colors">Home</a>
+        <a href="about.html" class="hover:text-maroon transition-colors">About Us</a>
+        <a href="services.html" class="hover:text-maroon transition-colors">Services</a>
+        <a href="projects.html" class="hover:text-maroon transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-maroon transition-colors">Contact Us</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="text-white font-heading font-bold text-lg">Links</h4>
+      <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
+        <a href="terms-of-service.html" class="hover:text-maroon transition-colors">Terms of Service</a>
+        <a href="privacy-policy.html" class="hover:text-maroon transition-colors">Privacy Policy</a>
+        <a href="cookies.html" class="hover:text-maroon transition-colors">Cookie Policy</a>
+      </nav>
+    </div>
+    <div>
+      <h4 class="text-white font-heading font-bold text-lg">Address</h4>
+      <p class="text-white/70 mt-5 text-sm leading-relaxed">2960 Eastern Ave, Rochester Hills, MI 48307</p>
+      <a href="tel:+12484085252" class="block text-white font-bold mt-4 text-sm hover:text-maroon transition-colors">(248) 408-5252</a>
+      <p class="text-white/70 mt-2 text-sm">hkhcoatings@gmail.com</p>
+      <p class="text-white/50 mt-4 text-sm">Mon - Sat: 8:00 AM - 7:00 PM</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2">
+      <p class="text-white/50 text-sm text-center sm:text-left">© 2026 HKH Custom Coatings LLC. Rochester, MI. All Rights Reserved.</p>
+      <a href="https://getarclo.com" target="_blank" rel="noopener" class="text-white/50 text-sm hover:text-maroon transition-colors">Website by Arclo</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const ratingCards = Array.from(document.querySelectorAll('.rating-card'));
+  const ratingNextBtn = document.getElementById('ratingNextBtn');
+
+  ratingCards.forEach((card) => {
+    card.addEventListener('click', () => {
+      ratingCards.forEach((c) => {
+        c.classList.remove('border-maroon', 'bg-maroon/5');
+        c.querySelector('input').checked = false;
+      });
+      card.classList.add('border-maroon', 'bg-maroon/5');
+      card.querySelector('input').checked = true;
+      ratingNextBtn.disabled = false;
+    });
+  });
+
+  ratingNextBtn.addEventListener('click', () => {
+    const selected = document.querySelector('input[name="rating"]:checked');
+    if (!selected) return;
+    const rating = parseInt(selected.value, 10);
+    if (rating >= 4) {
+      window.location.href = 'https://bit.ly/4rqcPVS';
+      return;
+    }
+    document.getElementById('feedbackStep1').classList.add('hidden');
+    document.getElementById('feedbackStep2b').classList.remove('hidden');
+  });
+
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackError = document.getElementById('feedbackError');
+  feedbackForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    feedbackError.classList.add('hidden');
+
+    const submitBtn = feedbackForm.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+
+    const selectedRating = document.querySelector('input[name="rating"]:checked');
+    const payload = {
+      name: document.getElementById('fbName').value,
+      email: document.getElementById('fbEmail').value,
+      message: document.getElementById('fbMessage').value,
+      rating: selectedRating ? selectedRating.value : '',
+      source: 'feedback-form',
+    };
+
+    try {
+      const res = await fetch('https://services.leadconnectorhq.com/hooks/6qvBZ6fK3nLQ361v5Amy/webhook-trigger/e70eceff-6bcb-4097-a07e-5a06c4c7b5df', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error('Webhook request failed with status ' + res.status);
+      document.getElementById('feedbackFields').classList.add('hidden');
+      document.getElementById('feedbackSuccess').classList.remove('hidden');
+    } catch (err) {
+      feedbackError.classList.remove('hidden');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalBtnText;
+    }
+  });
+</script>
+</body>
+</html>
