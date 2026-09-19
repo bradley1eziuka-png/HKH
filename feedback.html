@@ -8,7 +8,7 @@
 <link rel="icon" href="Photos/HKHlogo.png" type="image/jpeg">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-  tailwind.config = { theme: { extend: { colors: { maroon: '#6E0D00', maroondark: '#4E0900', ink: '#141416', body: '#5B5F73', navydeep: '#0A0A0A', navybanner: '#0D4E7C', line: '#E6E6EC' }, fontFamily: { heading: ['var(--font-heading)'], body: ['var(--font-body)'], hero: ['var(--font-hero)'] } } } }
+  tailwind.config = { theme: { extend: { colors: { maroon: '#6E0D00', maroondark: '#4E0900', ink: '#141416', body: '#5B5F73', navydeep: '#0A0A0A', navybanner: '#0D4E7C', line: '#E6E6EC', gold: '#FBBF24' }, fontFamily: { heading: ['var(--font-heading)'], body: ['var(--font-body)'], hero: ['var(--font-hero)'] } } } }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,61 +47,26 @@
     <img src="Photos/Logo.png" alt="HKH Custom Coatings" class="h-20 w-auto mx-auto">
     <h1 class="font-heading font-extrabold text-4xl md:text-5xl text-ink mt-8">How would you rate us?</h1>
 
-    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-12">
-      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="5">
-        <input type="radio" name="rating" value="5" class="sr-only">
-        <div class="flex gap-0.5">
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-        </div>
-        <span class="font-body text-sm font-medium text-ink">5 Stars</span>
-      </label>
-      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="4">
-        <input type="radio" name="rating" value="4" class="sr-only">
-        <div class="flex gap-0.5">
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-        </div>
-        <span class="font-body text-sm font-medium text-ink">4 Stars</span>
-      </label>
-      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="3">
-        <input type="radio" name="rating" value="3" class="sr-only">
-        <div class="flex gap-0.5">
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-        </div>
-        <span class="font-body text-sm font-medium text-ink">3 Stars</span>
-      </label>
-      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="2">
-        <input type="radio" name="rating" value="2" class="sr-only">
-        <div class="flex gap-0.5">
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-        </div>
-        <span class="font-body text-sm font-medium text-ink">2 Stars</span>
-      </label>
-      <label class="rating-card border border-line p-5 flex flex-col items-center gap-3 cursor-pointer hover:border-maroon transition-colors" data-rating="1">
+    <div id="starRating" class="flex items-center justify-center gap-2 sm:gap-3 mt-12">
+      <label class="cursor-pointer p-1">
         <input type="radio" name="rating" value="1" class="sr-only">
-        <div class="flex gap-0.5">
-          <svg class="w-5 h-5 text-maroon" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-          <svg class="w-5 h-5 text-line" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
-        </div>
-        <span class="font-body text-sm font-medium text-ink">1 Star</span>
+        <svg data-star="1" class="w-10 h-10 sm:w-12 sm:h-12 text-line transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </label>
+      <label class="cursor-pointer p-1">
+        <input type="radio" name="rating" value="2" class="sr-only">
+        <svg data-star="2" class="w-10 h-10 sm:w-12 sm:h-12 text-line transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </label>
+      <label class="cursor-pointer p-1">
+        <input type="radio" name="rating" value="3" class="sr-only">
+        <svg data-star="3" class="w-10 h-10 sm:w-12 sm:h-12 text-line transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </label>
+      <label class="cursor-pointer p-1">
+        <input type="radio" name="rating" value="4" class="sr-only">
+        <svg data-star="4" class="w-10 h-10 sm:w-12 sm:h-12 text-line transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
+      </label>
+      <label class="cursor-pointer p-1">
+        <input type="radio" name="rating" value="5" class="sr-only">
+        <svg data-star="5" class="w-10 h-10 sm:w-12 sm:h-12 text-line transition-colors" fill="currentColor" viewBox="0 0 20 20"><path d="M10 1.5l2.7 5.6 6.1.6-4.6 4.1 1.3 6-5.5-3-5.5 3 1.3-6-4.6-4.1 6.1-.6L10 1.5z"/></svg>
       </label>
     </div>
 
@@ -180,17 +145,23 @@
 </footer>
 
 <script>
-  const ratingCards = Array.from(document.querySelectorAll('.rating-card'));
+  const starLabels = Array.from(document.querySelectorAll('#starRating label'));
+  const starIcons = Array.from(document.querySelectorAll('#starRating svg[data-star]'));
   const ratingNextBtn = document.getElementById('ratingNextBtn');
 
-  ratingCards.forEach((card) => {
-    card.addEventListener('click', () => {
-      ratingCards.forEach((c) => {
-        c.classList.remove('border-maroon', 'bg-maroon/5');
-        c.querySelector('input').checked = false;
-      });
-      card.classList.add('border-maroon', 'bg-maroon/5');
-      card.querySelector('input').checked = true;
+  function paintStars(value) {
+    starIcons.forEach((icon) => {
+      const starValue = parseInt(icon.dataset.star, 10);
+      icon.classList.toggle('text-gold', starValue <= value);
+      icon.classList.toggle('text-line', starValue > value);
+    });
+  }
+
+  starLabels.forEach((label) => {
+    label.addEventListener('click', () => {
+      const input = label.querySelector('input');
+      input.checked = true;
+      paintStars(parseInt(input.value, 10));
       ratingNextBtn.disabled = false;
     });
   });
