@@ -145,9 +145,11 @@
 </footer>
 
 <script>
+  const starRatingEl = document.getElementById('starRating');
   const starLabels = Array.from(document.querySelectorAll('#starRating label'));
   const starIcons = Array.from(document.querySelectorAll('#starRating svg[data-star]'));
   const ratingNextBtn = document.getElementById('ratingNextBtn');
+  let selectedRating = 0;
 
   function paintStars(value) {
     starIcons.forEach((icon) => {
@@ -158,13 +160,20 @@
   }
 
   starLabels.forEach((label) => {
+    const input = label.querySelector('input');
+    const value = parseInt(input.value, 10);
+
+    label.addEventListener('mouseenter', () => paintStars(value));
+
     label.addEventListener('click', () => {
-      const input = label.querySelector('input');
       input.checked = true;
-      paintStars(parseInt(input.value, 10));
+      selectedRating = value;
+      paintStars(selectedRating);
       ratingNextBtn.disabled = false;
     });
   });
+
+  starRatingEl.addEventListener('mouseleave', () => paintStars(selectedRating));
 
   ratingNextBtn.addEventListener('click', () => {
     const selected = document.querySelector('input[name="rating"]:checked');
