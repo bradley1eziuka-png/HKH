@@ -107,7 +107,28 @@
     <nav class="hidden lg:flex items-center gap-9 py-6 font-body text-sm tracked text-white">
       <a href="../index.html" class="nav-link hover:text-maroon transition-colors">HOME</a>
       <a href="../about.html" class="nav-link hover:text-maroon transition-colors">ABOUT US</a>
-      <a href="../services.html" class="nav-link text-maroon">SERVICES</a>
+      <div class="relative group">
+        <a href="../services.html" class="nav-link text-maroon inline-flex items-center gap-1">
+          SERVICES
+          <svg class="w-3 h-3 shrink-0 transition-transform group-hover:rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="absolute left-0 top-full pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-opacity duration-200 z-50">
+          <div class="bg-navydeep border border-white/10 w-64 py-2 shadow-xl">
+        <a href="exterior-painting.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Exterior Painting</a>
+        <a href="interior-painting.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Interior Painting</a>
+        <a href="cabinet-painting.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Cabinet Painting</a>
+        <a href="staining.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Staining</a>
+        <a href="caulking.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Caulking</a>
+        <a href="power-washing.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Power Washing</a>
+        <a href="drywall-repair.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Drywall Repair</a>
+        <a href="epoxy-floors.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Epoxy Floors</a>
+        <a href="concrete-grinding.html" class="block px-5 py-3 text-sm text-white/80 hover:text-maroon hover:bg-white/5 transition-colors">Concrete Grinding</a>
+            <div class="border-t border-white/10 mt-2 pt-2">
+              <a href="../services.html" class="block px-5 py-3 text-sm font-semibold text-maroon hover:text-white transition-colors">View All Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <a href="../projects.html" class="nav-link hover:text-maroon transition-colors">PROJECTS</a>
       <a href="../contact.html" class="nav-link hover:text-maroon transition-colors">CONTACT US</a>
     </nav>
@@ -129,7 +150,24 @@
     <nav class="flex flex-col font-body text-sm tracked text-white px-6 py-4 gap-1">
       <a href="../index.html" class="py-3">HOME</a>
       <a href="../about.html" class="py-3">ABOUT US</a>
-      <a href="../services.html" class="py-3 text-maroon">SERVICES</a>
+      <details>
+        <summary class="py-3 text-maroon flex items-center justify-between cursor-pointer">
+          <span>SERVICES</span>
+          <svg class="chev w-4 h-4 shrink-0 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
+        </summary>
+        <div class="pl-4 flex flex-col gap-1 pb-1">
+          <a href="exterior-painting.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Exterior Painting</a>
+          <a href="interior-painting.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Interior Painting</a>
+          <a href="cabinet-painting.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Cabinet Painting</a>
+          <a href="staining.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Staining</a>
+          <a href="caulking.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Caulking</a>
+          <a href="power-washing.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Power Washing</a>
+          <a href="drywall-repair.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Drywall Repair</a>
+          <a href="epoxy-floors.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Epoxy Floors</a>
+          <a href="concrete-grinding.html" class="py-2 text-white/70 hover:text-maroon transition-colors">Concrete Grinding</a>
+          <a href="../services.html" class="py-2 font-semibold text-maroon">View All Services</a>
+        </div>
+      </details>
       <a href="../projects.html" class="py-3">PROJECTS</a>
       <a href="../contact.html" class="py-3">CONTACT US</a>
       <a href="tel:+19472182670" class="mt-3 inline-block text-center bg-maroon px-6 py-4">CALL (947) 218-2670</a>
