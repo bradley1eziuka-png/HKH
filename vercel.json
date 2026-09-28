@@ -1,6 +1,15 @@
 {
   "rewrites": [
     { "source": "/book-estimate", "destination": "/book-estimate.html" },
-    { "source": "/feedback", "destination": "/feedback.html" }
+    { "source": "/feedback", "destination": "/feedback.html" },
+    { "source": "/services/exterior-painting", "destination": "/service-pages/exterior-painting.html" },
+    { "source": "/services/interior-painting", "destination": "/service-pages/interior-painting.html" },
+    { "source": "/services/cabinet-painting", "destination": "/service-pages/cabinet-painting.html" },
+    { "source": "/services/staining", "destination": "/service-pages/staining.html" },
+    { "source": "/services/caulking", "destination": "/service-pages/caulking.html" },
+    { "source": "/services/power-washing", "destination": "/service-pages/power-washing.html" },
+    { "source": "/services/drywall-repair", "destination": "/service-pages/drywall-repair.html" },
+    { "source": "/services/epoxy-floors", "destination": "/service-pages/epoxy-floors.html" },
+    { "source": "/services/concrete-grinding", "destination": "/service-pages/concrete-grinding.html" }
   ]
 }

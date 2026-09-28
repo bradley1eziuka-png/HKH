@@ -16,6 +16,51 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/exterior-painting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/interior-painting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/cabinet-painting</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/staining</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/caulking</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/power-washing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/drywall-repair</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/epoxy-floors</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hkhcustomcoatingsmi.com/services/concrete-grinding</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.hkhcustomcoatingsmi.com/projects.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
