@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact Us | HKH Custom Coatings</title>
-<meta name="description" content="Request a free estimate from HKH Custom Coatings. Serving Rochester, Rochester Hills, Troy, Auburn Hills, and Oakland County, MI.">
+<meta name="description" content="Request a free estimate from HKH Custom Coatings, serving Rochester Hills, MI and Oakland County.">
+<link rel="canonical" href="https://www.hkhcustomcoatingsmi.com/contact.html">
+<meta property="og:title" content="Contact Us | HKH Custom Coatings">
+<meta property="og:description" content="Request a free estimate from HKH Custom Coatings, serving Rochester Hills, MI and Oakland County.">
+<meta property="og:url" content="https://www.hkhcustomcoatingsmi.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.hkhcustomcoatingsmi.com/images/epoxy-garage-floor-organized.png">
 <link rel="icon" href="Photos/HKHlogo.png" type="image/jpeg">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -156,6 +162,7 @@
     </nav>
   </div>
 </header>
+<main>
 
 <!-- ============ HERO ============ -->
 <section class="bg-navydeep text-center">
@@ -292,7 +299,7 @@
   <p class="text-body mt-5 max-w-2xl mx-auto leading-relaxed">We proudly serve homeowners and businesses throughout Oakland County and the surrounding Metro Detroit area with reliable epoxy coating and painting services.</p>
   <div class="grid lg:grid-cols-2 gap-10 mt-14 items-start text-left">
     <iframe
-      class="w-full h-[420px] border border-line grayscale-[15%]"
+      class="w-full h-[420px] border border-line grayscale-[15%]" title="Map of HKH Custom Coatings service area in Rochester Hills, MI"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
       src="https://www.google.com/maps?q=Rochester+Hills,+MI&output=embed">
@@ -388,6 +395,8 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+</main>
+
 <footer class="bg-navydeep">
   <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-12">
     <div>
@@ -395,7 +404,7 @@
       <p class="text-white/60 mt-6 leading-relaxed text-sm">We turn worn, damaged floors into durable, seamless finishes built to last, with honest pricing and clear communication from quote to completion.</p>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Menu</h4>
+      <p class="text-white font-body font-bold text-lg">Menu</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="index.html" class="hover:text-maroon transition-colors">Home</a>
         <a href="about.html" class="hover:text-maroon transition-colors">About Us</a>
@@ -405,7 +414,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Services</h4>
+      <p class="text-white font-body font-bold text-lg">Services</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="service-pages/exterior-painting.html" class="hover:text-maroon transition-colors">Exterior Painting</a>
         <a href="service-pages/interior-painting.html" class="hover:text-maroon transition-colors">Interior Painting</a>
@@ -419,7 +428,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Links</h4>
+      <p class="text-white font-body font-bold text-lg">Links</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="terms-of-service.html" class="hover:text-maroon transition-colors">Terms of Service</a>
         <a href="privacy-policy.html" class="hover:text-maroon transition-colors">Privacy Policy</a>
@@ -427,7 +436,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Address</h4>
+      <p class="text-white font-body font-bold text-lg">Address</p>
       <p class="text-white/70 mt-5 text-sm leading-relaxed">2960 Eastern Ave, Rochester Hills, MI 48307</p>
       <a href="tel:+19472182670" class="block text-white font-bold mt-4 text-sm hover:text-maroon transition-colors">(947) 218-2670</a>
       <p class="text-white/70 mt-2 text-sm">hkhcoatings@gmail.com</p>
@@ -467,7 +476,8 @@
       slides.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-        dot.className = 'w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.className = 'relative w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.innerHTML = '<span class="absolute -inset-2"></span>';
         dot.addEventListener('click', () => { goTo(i); resetTimer(); });
         dotsWrap.appendChild(dot);
       });

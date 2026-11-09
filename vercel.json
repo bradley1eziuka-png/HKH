@@ -10,6 +10,9 @@
     { "source": "/services/power-washing", "destination": "/service-pages/power-washing.html" },
     { "source": "/services/drywall-repair", "destination": "/service-pages/drywall-repair.html" },
     { "source": "/services/epoxy-floors", "destination": "/service-pages/epoxy-floors.html" },
-    { "source": "/services/concrete-grinding", "destination": "/service-pages/concrete-grinding.html" }
+    { "source": "/services/concrete-grinding", "destination": "/service-pages/concrete-grinding.html" },
+    { "source": "/services/garage-floor-coatings", "destination": "/service-pages/garage-floor-coatings.html" },
+    { "source": "/services/basement-epoxy-flooring", "destination": "/service-pages/basement-epoxy-flooring.html" },
+    { "source": "/services/commercial-epoxy-flooring", "destination": "/service-pages/commercial-epoxy-flooring.html" }
   ]
 }

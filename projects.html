@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Projects | HKH Custom Coatings</title>
 <meta name="description" content="See recent epoxy floor coating and painting projects from HKH Custom Coatings, serving Rochester, MI and Oakland County.">
+<link rel="canonical" href="https://www.hkhcustomcoatingsmi.com/projects.html">
+<meta property="og:title" content="Our Projects | HKH Custom Coatings">
+<meta property="og:description" content="See recent epoxy floor coating and painting projects from HKH Custom Coatings, serving Rochester Hills, MI and Oakland County.">
+<meta property="og:url" content="https://www.hkhcustomcoatingsmi.com/projects.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.hkhcustomcoatingsmi.com/images/epoxy-garage-floor-blue-2.png">
 <link rel="icon" href="Photos/HKHlogo.png" type="image/jpeg">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -151,6 +157,7 @@
     </nav>
   </div>
 </header>
+<main>
 
 <!-- ============ OUR PROJECTS ============ -->
 <section class="max-w-[1320px] mx-auto px-6 lg:px-10 py-20 lg:py-24">
@@ -286,6 +293,8 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+</main>
+
 <footer class="bg-navydeep">
   <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-12">
     <div>
@@ -293,7 +302,7 @@
       <p class="text-white/60 mt-6 leading-relaxed text-sm">We turn worn, damaged floors into durable, seamless finishes built to last, with honest pricing and clear communication from quote to completion.</p>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Menu</h4>
+      <p class="text-white font-body font-bold text-lg">Menu</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="index.html" class="hover:text-maroon transition-colors">Home</a>
         <a href="about.html" class="hover:text-maroon transition-colors">About Us</a>
@@ -303,7 +312,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Services</h4>
+      <p class="text-white font-body font-bold text-lg">Services</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="service-pages/exterior-painting.html" class="hover:text-maroon transition-colors">Exterior Painting</a>
         <a href="service-pages/interior-painting.html" class="hover:text-maroon transition-colors">Interior Painting</a>
@@ -317,7 +326,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Links</h4>
+      <p class="text-white font-body font-bold text-lg">Links</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="terms-of-service.html" class="hover:text-maroon transition-colors">Terms of Service</a>
         <a href="privacy-policy.html" class="hover:text-maroon transition-colors">Privacy Policy</a>
@@ -325,7 +334,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Address</h4>
+      <p class="text-white font-body font-bold text-lg">Address</p>
       <p class="text-white/70 mt-5 text-sm leading-relaxed">2960 Eastern Ave, Rochester Hills, MI 48307</p>
       <a href="tel:+19472182670" class="block text-white font-bold mt-4 text-sm hover:text-maroon transition-colors">(947) 218-2670</a>
       <p class="text-white/70 mt-2 text-sm">hkhcoatings@gmail.com</p>
@@ -365,7 +374,8 @@
       slides.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
-        dot.className = 'w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.className = 'relative w-2 h-2 rounded-full transition-colors ' + (i === index ? 'bg-maroon' : 'bg-line');
+        dot.innerHTML = '<span class="absolute -inset-2"></span>';
         dot.addEventListener('click', () => { goTo(i); resetTimer(); });
         dotsWrap.appendChild(dot);
       });

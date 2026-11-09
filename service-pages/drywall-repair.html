@@ -66,6 +66,46 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will the repair be visible after painting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A properly feathered and sanded repair should blend into the wall once painted. If your wall has texture, like orange peel or knockdown, mention it at your estimate so we can go over the best approach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fix water-damaged drywall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we can patch water-damaged sections, though the source of the leak should be fixed first so the repair doesn't fail again."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How big of a hole can you patch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We handle everything from small nail holes to larger sections that need new drywall cut in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to paint after a repair?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the patched area needs primer and paint to match the rest of the wall. We offer interior painting if you'd like both done together."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body class="bg-white">
 
@@ -175,6 +215,7 @@
     </nav>
   </div>
 </header>
+<main>
 
 <!-- ============ HERO ============ -->
 <section class="hero-bg">
@@ -275,7 +316,7 @@
         <span>Will the repair be visible after painting?</span>
         <svg class="chev w-5 h-5 shrink-0 transition-transform text-maroon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></svg>
       </summary>
-      <p class="text-body mt-4 leading-relaxed">A properly feathered and sanded repair should blend into the wall once painted. Matching existing wall texture, like orange peel or knockdown, is part of getting it to disappear. <!-- CONFIRM WITH HUNTER: can you match textured drywall finishes (orange peel, knockdown), or is that repair limited to smooth walls? --></p>
+      <p class="text-body mt-4 leading-relaxed">A properly feathered and sanded repair should blend into the wall once painted. If your wall has texture, like orange peel or knockdown, mention it at your estimate so we can go over the best approach.</p>
     </details>
     <details class="border border-line px-6 py-5 group">
       <summary class="flex items-center justify-between gap-4 font-body font-bold text-ink cursor-pointer">
@@ -331,6 +372,8 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
+</main>
+
 <footer class="bg-navydeep">
   <div class="max-w-[1320px] mx-auto px-6 lg:px-10 py-16 grid sm:grid-cols-2 lg:grid-cols-5 gap-12">
     <div>
@@ -338,7 +381,7 @@
       <p class="text-white/60 mt-6 leading-relaxed text-sm">We turn worn, damaged floors into durable, seamless finishes built to last, with honest pricing and clear communication from quote to completion.</p>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Menu</h4>
+      <p class="text-white font-body font-bold text-lg">Menu</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="../index.html" class="hover:text-maroon transition-colors">Home</a>
         <a href="../about.html" class="hover:text-maroon transition-colors">About Us</a>
@@ -348,7 +391,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Services</h4>
+      <p class="text-white font-body font-bold text-lg">Services</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="exterior-painting.html" class="hover:text-maroon transition-colors">Exterior Painting</a>
         <a href="interior-painting.html" class="hover:text-maroon transition-colors">Interior Painting</a>
@@ -362,7 +405,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Links</h4>
+      <p class="text-white font-body font-bold text-lg">Links</p>
       <nav class="flex flex-col gap-3 mt-5 text-white/70 text-sm">
         <a href="../terms-of-service.html" class="hover:text-maroon transition-colors">Terms of Service</a>
         <a href="../privacy-policy.html" class="hover:text-maroon transition-colors">Privacy Policy</a>
@@ -370,7 +413,7 @@
       </nav>
     </div>
     <div>
-      <h4 class="text-white font-body font-bold text-lg">Address</h4>
+      <p class="text-white font-body font-bold text-lg">Address</p>
       <p class="text-white/70 mt-5 text-sm leading-relaxed">2960 Eastern Ave, Rochester Hills, MI 48307</p>
       <a href="tel:+19472182670" class="block text-white font-bold mt-4 text-sm hover:text-maroon transition-colors">(947) 218-2670</a>
       <p class="text-white/70 mt-2 text-sm">hkhcoatings@gmail.com</p>
